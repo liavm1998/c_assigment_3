@@ -9,6 +9,12 @@ int main()
     char* word =scanWord();
     char* text =scanText();
     char* ans;
+    if(strlen(word)==0||strlen(text)==0)
+    {
+        printf("Gematria Sequences: ");    
+        printf("\nAtbash Sequences: ");
+        printf("\nAnagram Sequences: ");    
+    }
     /////Q1
     ans=Q1(word,text);
     printf("Gematria Sequences: %s",ans);
