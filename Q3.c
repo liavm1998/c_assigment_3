@@ -45,7 +45,6 @@ char *Q3(char *w, char *txt)
             {
                 s_pointer = i;
             }
-            
             strcpy(copy, w);
             
         }
@@ -68,8 +67,7 @@ char *Q3(char *w, char *txt)
             }
             strcat(ans, concat);
             strcat(ans, "~");
-            s_pointer++;
-            i=s_pointer;
+            s_pointer = i;
             strcpy(copy, w);
         }
     }
