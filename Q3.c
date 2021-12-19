@@ -42,7 +42,6 @@ char* Q3(char* w,char* txt)
         {
             char* concat= malloc(sizeof(char) * 780);
             strncpy(concat,txt+s_pointer+1,i-s_pointer);
-            int j=0;
             cur=concat[0];
             while(cur==' ')
             {
