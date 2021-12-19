@@ -14,6 +14,7 @@ int main()
         printf("Gematria Sequences: ");    
         printf("\nAtbash Sequences: ");
         printf("\nAnagram Sequences: ");    
+        return 0;
     }
     /////Q1
     ans=Q1(word,text);

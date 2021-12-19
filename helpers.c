@@ -80,7 +80,12 @@ char *scanWord()
     char *w;
     w=malloc (sizeof (char)*WORD);
     //printf("enter word\n");
-    scanf("%s", w);
+    int i = 0;
+    char c1=0;
+    while((c1=getchar()) != ' ' && c1 != '\n' && c1!='\t') 
+    {
+        w[i++] = c1;
+    }
     return w;
 }
 
