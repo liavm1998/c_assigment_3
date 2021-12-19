@@ -52,7 +52,14 @@ char *Q3(char *w, char *txt)
         if ((copy != NULL) && (copy[0] == '\0')) //////////we fount word
         {
             char *concat = malloc(sizeof(char) * 780);
+            if(s_pointer==0)
+            {
+                strncpy(concat, txt + s_pointer, i - s_pointer+1);
+            }
+            else
+            {
             strncpy(concat, txt + s_pointer + 1, i - s_pointer);
+            }
             cur = concat[0];
             while (cur == ' ')
             {
