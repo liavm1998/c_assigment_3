@@ -57,17 +57,19 @@ char *Q3(char *w, char *txt)
             }
             else
             {
-            strncpy(concat, txt + s_pointer + 1, i - s_pointer);
+                strncpy(concat, txt + s_pointer + 1, i - s_pointer);
             }
             cur = concat[0];
             while (cur == ' ')
             {
                 deletechar(concat, cur);
                 cur = concat[0];
+               s_pointer++;   
             }
             strcat(ans, concat);
             strcat(ans, "~");
-            s_pointer = i;
+            s_pointer++;
+            i=s_pointer;
             strcpy(copy, w);
         }
     }
