@@ -26,10 +26,6 @@ char *Q3(char *w, char *txt)
         {
             continue;
         }
-        if (cur == 'b')
-        {
-            cur = 'b';
-        }
         //////////char is currect count it
         if (strchr(copy, cur) != NULL)
         {
