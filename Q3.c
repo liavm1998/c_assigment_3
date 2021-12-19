@@ -3,6 +3,9 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#define TXT 1024
+#define WORD 30
+
 
 char* Q3(char* w,char* txt)
 {
@@ -39,6 +42,13 @@ char* Q3(char* w,char* txt)
         {
             char* concat= malloc(sizeof(char) * 780);
             strncpy(concat,txt+s_pointer+1,i-s_pointer);
+            int j=0;
+            cur=concat[0];
+            while(cur==' ')
+            {
+                deletechar(concat,cur);
+                cur=concat[0];
+            }
             strcat(ans,concat);
             strcat(ans,"~");
             s_pointer=i;
