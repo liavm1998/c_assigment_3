@@ -11,13 +11,13 @@ int main()
     char* ans;
     /////Q1
     ans=Q1(word,text);
-    printf("\nGematria Sequences:%s",ans);
+    printf("Gematria Sequences:%s",ans);
     ////Q2
     ans=Q2(word,text);
-    printf("Atbash Sequences:%s",ans);
+    printf("\nAtbash Sequences:%s",ans);
     ////Q3
     ans=Q3(word,text);
-    printf("\nAnagram Sequences:%s\n",ans);
+    printf("\nAnagram Sequences:%s",ans);
     return 0;
 }
 

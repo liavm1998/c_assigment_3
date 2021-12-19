@@ -80,6 +80,6 @@ char* Q2(char* w,char* txt)
         strcat(ans,"~");
     }
     ans[strlen(ans) - 1] = '\0';
-    printf("%s\n",ans); 
+    printf("%s",ans); 
     return ans;
 }
