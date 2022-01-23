@@ -3,7 +3,7 @@ CC=gcc
 AR=ar
 FLAGS= -Wall -g
  
-all: QuesAnswers.a helpers.a stringProg
+all: stringProg
 
 stringProg: Main.o QuesAnswers.a helpers.a
 	$(CC) $(FLAGS) -o stringProg Main.o helpers.a QuesAnswers.a
