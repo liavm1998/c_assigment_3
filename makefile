@@ -6,10 +6,10 @@ FLAGS= -Wall -g
 all: QuesAnswers.a helpers.a stringProg
 
 stringProg: Main.o QuesAnswers.a helpers.a
-	$(CC) $(FLAGS) -o stringProg main.o helpers.a QuesAnswers.a
+	$(CC) $(FLAGS) -o stringProg Main.o helpers.a QuesAnswers.a
 
 Main.o: Main.c
-	$(CC) $(FLAGS) -c main.c
+	$(CC) $(FLAGS) -c Main.c
 
 QuesAnswers.a: Q1.o Q2.o Q3.o QuesAnswers.h
 	$(AR) -rcs QuesAnswers.a Q1.o Q2.o Q3.o
